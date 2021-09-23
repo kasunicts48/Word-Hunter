@@ -1,0 +1,75 @@
+<!-- 
+!    develop : kasuncts48 
+*    date : 2021.06.19
+?    version : 0.1v
+*    title : word hunter
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <title>WordHunter</title>
+    <style>
+        .lead
+        {
+            font-size: 30px;
+        }
+
+        #current-word
+        {
+            color: chartreuse;
+        }
+
+        .instructions
+        {
+            color: rgb(185, 0, 0);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <header class="bg-secondary text-center p-3 mb-5">
+        <h1 class="title">Word Hunter</h1>
+    </header>
+    
+    <div class="container text-center">
+        <!-- Word and input -->
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="lead">Type the word given within <span class="text-success" id="second"></span> Seconds</p>
+                <h2 class="display-2 mb-5" id="current-word">hello</h2>
+                <input type="text" class="form-control form-control-lg" id="word-input" placeholder="Start typing..." autofocus>
+                <h4 class="mt-3" id="message"></h4>
+
+                <!-- Time & score column -->
+                <div class="row mt-1">
+                    <!-- <div class="col-md-6">
+                        <h3>Time left : <span id="time">0</span></h3>
+                    </div> -->
+                    <div class="col-md">
+                        <h3 class="score">Score : <span id="score">0</span></h3>
+                    </div>
+                </div>
+
+                <!-- Instruction -->
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>Instructions</h5>
+                            <p class="instructions">
+                                Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
